@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Form Mahasiswa</title>
+    <style> 
+        table, th, td {
+            border: 1px solid black;
+            /* border-collapse: collapse; ini hanya coba coba, tadi */
+        }
+
+        fieldset {
+            width: 30%;
+        }
+
+    </style>
+    </head>
+    <body> 
+         <h1> Absensi Mahasiswa Teknik </h1>
+        <table style="text-align: center;">
+            <tr>
+                <th rowspan="3">NO</th>
+                <th rowspan="3">NPM</th>
+                <th rowspan="3">NAMA</th>
+                <th colspan="7">PERTEMUAN</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+            </tr>
+            <tr>
+                <th>9-Feb</th>
+                <th>16-Feb</th>
+                <th>23-Feb</th>
+                <th>2-Mar</th>
+                <th>9-Mar</th>
+                <th>16-Mar</th>
+                <th>23-Mar</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>5520124031</td>
+                <td>Emilia Croissant</td>
+                <td>v</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>5520124022</td>
+                <td>Hipatia Croissant</td>
+                <td>v</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>5520124012</td>
+                <td>Simon Croissant</td>
+                <td>v</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br><br><br><br><br>
+        <style>
+            .tab {
+                display: inline-block;
+                margin-left: 50px;
+            }
+        </style>
+        <h1>Form Mahasiswa</h1>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Data Mahasiswa</legend>
+            <label><b>NAMA &emsp;&emsp;:</b></label>
+            <input type="text" name="nama" placeholder="Masukan Nama Anda"><br>
+            <label><b>NPM &emsp;&emsp;&emsp;:</b></label>
+            <input type="text" name="nama" placeholder="Masukan Nama Anda"><br>
+            <label><b>KELAS &emsp;&emsp;:</b></label>
+            <input type="text" name="nama" placeholder="Masukan Nama Anda"><br>
+            <label for="Kelas"><b>Kelas :</label>
+            <select id="Kelas" name="Kelas">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+            </select> <br>
+            <input type="radio" name="Gender" value="Laki-Laki"> Laki-Laki
+            <input type="radio" name="Gender" value="Perempuan"> Perempuan
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>Tempat Tinggal Mahasiswa</legend>
+                <label for="alamat"> Alamat: </label>
+                <textarea name="alamat" rows="5" cols="10">
+                    Masukan Alamat anda disini...
+                </textarea><br>
+                <label>Kecamatan:</label>
+                <input type="text" name="Kecamatan"><br>
+                <label>Kabupaten/Kotamadya</label>
+                <input type="text" name="Kabupaten"><br>
+                <label>Provinsi</label>
+                <input type="text" name="Kabupaten"><br>
+                <label for="Kode Pos">Kode Pos</label>
+                <input type="text" name="Kode Post"> <br>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>Lain-Lainnya</legend>
+                <label>Bahasa pemerograman : </label>
+                <input type="checkbox"> C/C++
+                <input type="checkbox"> Go Lang
+                <input type="checkbox"> Python
+                <input type="checkbox"> Lainnya
+                <input type="checkbox"> PHP
+                <input type="checkbox"> Javascript
+                <input type="checkbox"> Ruby
+                <br><br>
+                <label>Kegiatan : </label>
+                <input type="checkbox"> Organisasi Kemahasiswaan
+                <input type="checkbox"> Bidang Olahraga
+                <input type="checkbox"> Lainnya
+                <input type="checkbox"> Organisasi di Luar Kampus
+                <input type="checkbox"> Bidang Seni
+            </fieldset>
+            <input type="reset" id="submit" value="Reset">
+            <input type="submit"submit" value="Submit">
+        </form>
+
+    </body>
+</html>
