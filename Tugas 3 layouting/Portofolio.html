@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tugas Layout</title>
+        <style>
+            body {
+                background-image: url("https://cdn.wallpapersafari.com/48/55/HSvFGT.jpg");
+            }
+
+            .header{
+                padding: 1px;
+                background-image: url("https://cdn.wallpapersafari.com/48/55/HSvFGT.jpg");
+                background-size: 2000px;
+                background-repeat: no-repeat;
+                text-align: center;
+                color: rgb(255, 255, 255);
+            }
+
+            .nav_menu {
+                /* overflow mengatur bagaimana overflow ditangani */
+                overflow: hidden;
+                background-color: rgb(29, 38, 107);
+            }
+
+            .nav_menu a {
+                /* float untuk ke kirikan jadi tidak mengambil semua space */
+                float: right;
+                display: flexbox;
+                color: rgb(255, 255, 255);
+                background-color: rgb(29, 38, 107);
+                text-decoration: none;
+                padding: 10px 20px;
+                text-align: center;
+                /* HARUSNYA GUNAIN FLEXBOX BUKAN FLOAT
+                YASUDAHLAHH 
+                sebagai gantinya flexbox ada di bagian timeline*/
+                
+            }
+            
+            .nav_menu logo {
+                float: left;
+                margin-bottom: ;
+                color: rgb(255, 255, 255);
+                margin-left: 10px;
+               
+            }
+
+            .nav_menu a:hover {
+                background-color: rgb(198, 200, 233);
+                color: rgb(51, 20, 191);
+            }
+
+            .content {
+                min-width: 0;
+                min-height: 0;
+                display: grid;
+                grid-template-areas: "article article"
+                                     "footer footer";
+                grid-template-columns: minmax(0, 1fr) 50%;
+                grid-template-rows: minmax(0, auto);
+                /* grid-template-columns: 50% 50% minmax(100px, auto);
+                grid-template-rows: 500px;
+                gap: 1px;
+                text-align: center;
+                color: white */
+                /* Belajar Grid 
+                easier than i thought, this thing is soo fun and powerful */
+            }
+
+            #article {
+                padding: 30px;
+                background-color: #3143e6;
+                grid-area: article;
+                color: white;
+                height: auto
+                ;
+            }
+
+
+
+            #footer {
+                color: white;
+                grid-area: footer;
+                background-color: rgb(29, 38, 107);
+               
+                padding;
+                text-align: center;
+            }
+
+            #footer img {
+                width: 30px;
+                margin-top: auto;
+                margin-left: auto;
+                align: center;
+            }
+
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 25px;
+                width: 50%;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                column-gap: 1em;
+            }
+
+            #gambar1 {
+                height: 400px;
+                width: 400px;
+                object-fit: cover;
+                overflow: hidden;
+            }
+
+            #gambar1:hover {
+             transform: scale(1.2); /* 150% zoom */
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1 style="margin-bottom: 5px;">Welcome To My Website</h1>
+            <p">Tolut IF A 24</p>
+        </div>
+        <nav class="nav_menu">
+            <logo style="border-radius: 50%; overflow: hidden;">
+                <img src="https://pbs.twimg.com/profile_images/1961280383376625664/ehCxm03B_400x400.jpg" width="39px" align="center"></logo>
+            <logo style="padding: 10px; padding-left: 1px;">Arion</logo>
+            <a href="#">portfolio</a>
+            <a href="Layout.html">about</a>
+            <a href="Timeline.html">Timeline</a>
+        </nav>
+        
+        <section class="content">
+            <article id="article">
+                <h1 align="center ">Insert Portofolio here (keburu deadline)</h1>
+            </article>
+            
+            <footer id="footer">
+                <p>Contact Me :
+                     <br><img src="https://img.icons8.com/?size=100&id=8824&format=png&color=228BE6">
+                     <img src="https://img.icons8.com/?size=100&id=ahcTsEkPQu79&format=png&color=228BE6">
+                    </p>
+                
+            </footer>
+        </section>
+    </body>
+</html>

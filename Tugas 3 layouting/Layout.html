@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tugas Layout</title>
+        <style>
+            .header{
+                padding: 1px;
+                background-image: url("https://cdn.wallpapersafari.com/48/55/HSvFGT.jpg");
+                background-size: 2000px;
+                background-repeat: no-repeat;
+                text-align: center;
+                color: rgb(255, 255, 255);
+            }
+
+            .nav_menu {
+                /* overflow mengatur bagaimana overflow ditangani */
+                overflow: hidden;
+                background-color: rgb(29, 38, 107);
+            }
+
+            .nav_menu a {
+                /* float untuk ke kirikan jadi tidak mengambil semua space */
+                float: right;
+                display: flexbox;
+                color: rgb(255, 255, 255);
+                background-color: rgb(29, 38, 107);
+                text-decoration: none;
+                padding: 10px 20px;
+                text-align: center;
+                /* HARUSNYA GUNAIN FLEXBOX BUKAN FLOAT
+                YASUDAHLAHH 
+                sebagai gantinya flexbox ada di bagian timeline*/
+                
+            }
+            
+            .nav_menu logo {
+                float: left;
+                margin-bottom: ;
+                color: rgb(255, 255, 255);
+                margin-left: 10px;
+               
+            }
+
+            .nav_menu a:hover {
+                background-color: rgb(198, 200, 233);
+                color: rgb(51, 20, 191);
+            }
+
+            .content {
+                min-width: 0;
+                min-height: 0;
+                display: grid;
+                grid-template-areas: "article aside"
+                                     "footer footer";
+                grid-template-columns: minmax(0, 1fr) 50%;
+                grid-template-rows: minmax(0, auto);
+                /* grid-template-columns: 50% 50% minmax(100px, auto);
+                grid-template-rows: 500px;
+                gap: 1px;
+                text-align: center;
+                color: white */
+                /* Belajar Grid 
+                easier than i thought, this thing is soo fun and powerful */
+            }
+
+            #article {
+                padding: 30px;
+                background-color: #3143e6;
+                grid-area: article;
+                color: white;
+                height: 500px;
+            }
+
+            #article h1 {
+                margin-bottom: -14px;
+            }
+
+            #aside {
+                padding-top: 20%;
+                place-items: center;
+                color: white;
+                background-color: #3143e6;
+                grid-area: aside;
+            }
+
+            #footer {
+                color: white;
+                grid-area: footer;
+                background-color: rgb(29, 38, 107);
+               
+                padding;
+                text-align: center;
+            }
+
+            #footer img {
+                width: 30px;
+                margin-top: auto;
+                margin-left: auto;
+                align: center;
+            }
+
+            .timeline, .portfolio{
+                background: rgb(252, 220, 160);
+                width: 50%;
+                border-radius: 10px;
+            }
+
+            .timeline a, .portfolio a {
+                text-decoration: none;
+                text-align: center;
+            }
+
+            .timeline:hover, .portfolio:hover  {
+                background-color: white;
+            }
+
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 25px;
+                width: 50%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1 style="margin-bottom: 5px;">Welcome To My Website</h1>
+            <p">Tolut IF A 24</p>
+        </div>
+        <nav class="nav_menu">
+            <logo style="border-radius: 50%; overflow: hidden;">
+                <img src="https://pbs.twimg.com/profile_images/1961280383376625664/ehCxm03B_400x400.jpg" width="39px" align="center"></logo>
+            <logo style="padding: 10px; padding-left: 1px;">Arion</logo>
+            <a href="#">portfolio</a>
+            <a href="#">about</a>
+            <a href="Timeline.html">Timeline</a>
+        </nav>
+        
+        <section class="content">
+            <article id="article">
+                <h1 align="center">About Me</h1>
+                <br><br>
+                <img class="center" src="Screenshot 2025-10-10 170507.png" width="350px"
+                 style="border-radius: 50%; overflow: hidden;">
+                <p align="center">Hello, My name is Tolut aka Hyde, im a self taught artist from Indonesia. I have been studying drawing <br>since 2020.
+                    My skillsets are vary but mostly consist of stylize drawing in Eastern style, i have quite an understanding
+                    on fundamental drawing, this include perspective, Shapes, Lighting, and Gesture. <br>This website made to show my Artistic growth and my Arts
+                </p>
+            </article>
+            <aside id="aside">
+                
+                <h1>Check My Gallery</h1>
+                <div class="timeline">
+                    <a href="Timeline.html"><h1>Work Timeline</h1></a>
+                </div>
+                <div class="portfolio">
+                    <a href="Portofolio.html"><h1>Portfolio</h1></a>
+                </div>
+                
+                <p align=""></p>
+            </aside>
+            
+            <footer id="footer">
+                <p>Contact Me :
+                     <br><img src="https://img.icons8.com/?size=100&id=8824&format=png&color=228BE6">
+                     <img src="https://img.icons8.com/?size=100&id=ahcTsEkPQu79&format=png&color=228BE6">
+                    </p>
+                
+            </footer>
+        </section>
+    </body>
+</html>
