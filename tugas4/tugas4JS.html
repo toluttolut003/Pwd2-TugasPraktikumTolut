@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+    <head>
+        <title>PWD 4</title>
+        <style>
+            body {
+                background-color: rgb(40, 66, 66);
+                padding-bottom: 2000px;
+            }
+
+            #header {
+                color: white;
+            }
+
+            #up {
+                width: 70px;
+                height: 70px;
+                position: fixed;
+                right: 80px;
+                bottom: 100px;
+                opacity: 0%;
+                border-radius: 50px;
+                transition: opacity 0.3s, background-color 0.3s;
+            }
+
+            .tebalkan:hover {
+                opacity: 1.0 !important;
+                border: 1px solid black;
+            }
+
+            #end {
+                position: absolute;
+                left: 1px;
+                bottom: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="header">HELLO WORLD</h1>
+        <p style="color: white;">ini adalah paragraf</p>
+        <P style="color: white;">Tolut IF A 24!!!!!!!!!!!!!!!!</P>
+        <button type="button" id="up" onclick="ButtonUp()">
+             ^<br>return to top 
+        </button>
+        <p style="color: white;" id="end">scroll ke sini untuk memunculkan return to top</p>
+        <script src="Script.JS"></script>
+    </body>
+</html> 
