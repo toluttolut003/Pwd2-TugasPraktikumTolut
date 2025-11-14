@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" 
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <p id="P" style="margin-bottom: -1px;">Insert Your Prepencial Password Here</p>
+    <input class="input" type="password"><br>
+    <button class="button" type="button">show password</button>
+    <script>
+        
+        $(document).ready(function(){
+            $(".button").click(function(){
+                var current = $(".input").attr("type");
+                if(current === "password"){
+                    $(".input").attr("type","text");
+                    $(this).text("hide password")
+                }else { 
+                    $(".input").attr("type","password");
+                    $(this).text("show password")
+                }
+            
+            });
+        });
+
+    </script>
+</body>
+</html><html>
