@@ -39,6 +39,13 @@
         }
         
         ?>
+        
+        </tr>
+    <tr>
+        <?php
+            
+        ?>
+    </tr>
 
     </table>
     <script>
